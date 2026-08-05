@@ -1,6 +1,6 @@
 import Link from "next/link";
 import EventCard from "../Eventcard.js/page";
-import { EVENTS, ADMISSIONS } from "../../app/mockdata/page";
+import { EVENTS, ADMISSIONS } from "@/lib/mockData.js/page";
 
 export default function Homepage() {
   const upcoming = EVENTS.slice(0, 2);

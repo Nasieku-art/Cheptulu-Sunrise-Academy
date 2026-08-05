@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import EventCard from "../../components/Eventcard.js/page";
-import { EVENTS } from "../mockdata/page";
+import { EVENTS } from "../../lib/mockData.js/page";
 
 export const metadata = {
   title: "Events — Cheptulu Sunrise Academy",
