@@ -36,7 +36,7 @@ export default function AdmissionsPage() {
       </h1>
 
       <div className="mt-10 grid gap-5 sm:grid-cols-3">
-        <div className="rounded-2xl border border-[#1B4332]/10 bg-white/60 p-5">
+        <div className="rounded-2xl border bg-white/60 p-5">
           <p className="text-xs font-semibold uppercase tracking-wide">
             Applications Open
           </p>
@@ -44,7 +44,7 @@ export default function AdmissionsPage() {
             {formatDate(ADMISSIONS.applicationOpens)}
           </p>
         </div>
-        <div className="rounded-2xl border border-[#1B4332]/10 bg-white/60 p-5">
+        <div className="rounded-2xl border bg-white/60 p-5">
           <p className="text-xs font-semibold uppercase tracking-wide ">
             Applications Close
           </p>

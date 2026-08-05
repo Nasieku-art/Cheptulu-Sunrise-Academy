@@ -79,7 +79,7 @@ export default function Homepage() {
             </p>
           </div>
           <Link
-            href="/admissions"
+            href="/admission"
             className="shrink-0 rounded-full bg-[#65081f] px-6 py-3 text-sm font-semibold  transition-colors hover:bg-[#1B4332]"
           >
             Admission Requirements
