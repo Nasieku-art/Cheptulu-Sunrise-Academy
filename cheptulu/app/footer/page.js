@@ -64,12 +64,6 @@ export default function Footer() {
               />
 
             </li>
-            <li>
-                <Image
-                src=""
-                alt=""
-                />
-            </li>
           </ul>
         </div>
       </div>

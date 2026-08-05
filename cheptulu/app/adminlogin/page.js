@@ -26,11 +26,11 @@ export default function AdminLogin() {
 
   return (
     <section className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-5 py-16 sm:px-8">
-      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8a7b4f]">
+      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#FAE7BC]">
         Staff Access
       </span>
       <h1
-        className="mt-2 text-3xl font-semibold text-[#1B4332]"
+        className="mt-2 text-3xl font-semibold"
         style={{ fontFamily: "'Fraunces', 'Georgia', serif" }}
       >
         Admin Login
@@ -43,7 +43,7 @@ export default function AdminLogin() {
         <div>
           <label
             htmlFor="email"
-            className="block text-xs font-semibold uppercase tracking-wide text-[#8a7b4f]"
+            className="block text-xs font-semibold uppercase tracking-wide text-[#FAE7BC]"
           >
             Email
           </label>
@@ -54,15 +54,15 @@ export default function AdminLogin() {
             required
             value={form.email}
             onChange={handleChange}
-            className="mt-2 w-full rounded-xl border border-[#1B4332]/15 bg-white/70 px-4 py-3 text-sm text-[#22201B] outline-none transition-colors focus:border-[#1B4332]"
-            placeholder="admin@cheptuluschool.ac.ke"
+            className="mt-2 w-full rounded-xl border  bg-white/70 px-4 py-3 text-sm text-[#22201B] outline-none transition-colors focus:border-[#1B4332]"
+            placeholder="admin@cheptulusunrise.ac.ke"
           />
         </div>
 
         <div>
           <label
             htmlFor="password"
-            className="block text-xs font-semibold uppercase tracking-wide text-[#8a7b4f]"
+            className="block text-xs font-semibold uppercase tracking-wide text-[#FAE7BC]"
           >
             Password
           </label>
