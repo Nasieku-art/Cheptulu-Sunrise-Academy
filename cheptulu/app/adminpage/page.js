@@ -1,7 +1,8 @@
-import { ADMISSIONS } from "../../lib/mockData";
+
+import { ADMISSIONS } from "@/lib/mockData.js/page";
 
 export const metadata = {
-  title: "Admissions — Cheptulu Secondary School",
+  title: "Admissions — Cheptulu Sunrise Academy",
 };
 
 function formatDate(dateStr) {
@@ -20,23 +21,23 @@ export default function AdmissionsPage() {
       <span
         className={`inline-block rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${
           isOpen
-            ? "border border-[#C9971C]/40 bg-[#C9971C]/10 text-[#8a7b4f]"
-            : "border border-[#1B4332]/15 bg-[#1B4332]/5 text-[#1B4332]/60"
+            ? "border text-[#FAE7BC]"
+            : "border border-[#1B4332]/15 bg-[#1B4332]/5 "
         }`}
       >
         {isOpen ? "Admissions Open" : "Admissions Closed"}
       </span>
 
       <h1
-        className="mt-4 text-3xl font-semibold text-[#1B4332] sm:text-4xl"
+        className="mt-4 text-3xl font-semibold sm:text-4xl"
         style={{ fontFamily: "'Fraunces', 'Georgia', serif" }}
       >
-        Admissions — Intake {ADMISSIONS.intakeYear}
+        Admissions  Intake {ADMISSIONS.intakeYear}
       </h1>
 
       <div className="mt-10 grid gap-5 sm:grid-cols-3">
         <div className="rounded-2xl border border-[#1B4332]/10 bg-white/60 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#8a7b4f]">
+          <p className="text-xs font-semibold uppercase tracking-wide">
             Applications Open
           </p>
           <p className="mt-2 text-lg font-semibold text-[#1B4332]">
@@ -44,15 +45,15 @@ export default function AdmissionsPage() {
           </p>
         </div>
         <div className="rounded-2xl border border-[#1B4332]/10 bg-white/60 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#8a7b4f]">
+          <p className="text-xs font-semibold uppercase tracking-wide ">
             Applications Close
           </p>
           <p className="mt-2 text-lg font-semibold text-[#1B4332]">
             {formatDate(ADMISSIONS.applicationCloses)}
           </p>
         </div>
-        <div className="rounded-2xl border border-[#1B4332]/10 bg-white/60 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-[#8a7b4f]">
+        <div className="rounded-2xl border bg-white/60 p-5">
+          <p className="text-xs font-semibold uppercase tracking-wide">
             Interviews
           </p>
           <p className="mt-2 text-lg font-semibold text-[#1B4332]">
@@ -63,15 +64,15 @@ export default function AdmissionsPage() {
 
       <div className="mt-12">
         <h2
-          className="text-xl font-semibold text-[#1B4332]"
+          className="text-xl font-semibold"
           style={{ fontFamily: "'Fraunces', 'Georgia', serif" }}
         >
           Requirements
         </h2>
         <ul className="mt-4 space-y-3">
           {ADMISSIONS.requirements.map((req) => (
-            <li key={req} className="flex items-start gap-3 text-sm text-[#22201B]/80">
-              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#C9971C]" />
+            <li key={req} className="flex items-start gap-3 text-sm">
+              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FAE7BC]" />
               {req}
             </li>
           ))}
