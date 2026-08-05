@@ -50,22 +50,7 @@ export default function Footer() {
             <li>+254 115 811 222</li>
           </ul>
         </div>
-        <div>
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C9971C]">
-            Social Media
-          </span>
-          <ul>
-            <li>
-              <Image 
-              src="/Image/facebook.avif"
-              alt="Facebook-logo"
-              width={40}
-              height={20}
-              />
-
-            </li>
-          </ul>
-        </div>
+        
       </div>
 
       <div className="border-t border-[#FAF6EC]/10 px-5 py-5 text-center text-xs text-[#FAF6EC]/50 sm:px-8">
