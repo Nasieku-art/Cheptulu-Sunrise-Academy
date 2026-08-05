@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import EventCard from "../eventcard/page";
+import EventCard from "../../components/Eventcard.js/page";
 import { EVENTS } from "../mockdata/page";
 
 export const metadata = {
@@ -20,15 +20,13 @@ export default function EventsPage() {
         Events
       </h1>
       <p className="mt-3 max-w-xl text-sm leading-relaxed text-[#FAF6EC] sm:text-base">
-        Keep up with school functions, meetings, and celebrations throughout
-        the term.
+        Keep up with school functions, meetings, and celebrations throughout the
+        term.
       </p>
 
       <div className="mt-10 space-y-5">
         {EVENTS.length === 0 ? (
-          <p className="text-sm ">
-            No events posted yet — check back soon.
-          </p>
+          <p className="text-sm ">No events posted yet — check back soon.</p>
         ) : (
           EVENTS.map((event) => <EventCard key={event.id} event={event} />)
         )}

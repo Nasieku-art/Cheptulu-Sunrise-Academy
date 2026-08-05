@@ -1,13 +1,12 @@
 import Link from "next/link";
-import EventCard from "../eventcard/page";
-import { EVENTS, ADMISSIONS } from "../mockdata/page";
+import EventCard from "../Eventcard.js/page";
+import { EVENTS, ADMISSIONS } from "../../app/mockdata/page";
 
 export default function Homepage() {
   const upcoming = EVENTS.slice(0, 2);
 
   return (
     <>
-     
       <section className="relative overflow-hidden border-b  border-[#1B4332]/10">
         <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
           <span className="inline-block rounded-full border px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#FAF6EC]">
@@ -42,7 +41,6 @@ export default function Homepage() {
         </div>
       </section>
 
-   
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="flex items-end justify-between gap-4">
           <h2
@@ -51,10 +49,7 @@ export default function Homepage() {
           >
             Upcoming Events
           </h2>
-          <Link
-            href="/events"
-            className="text-sm font-semibold text-[#FAF6EC]"
-          >
+          <Link href="/events" className="text-sm font-semibold text-[#FAF6EC]">
             View all →
           </Link>
         </div>
@@ -65,7 +60,6 @@ export default function Homepage() {
         </div>
       </section>
 
-     
       <section className="border-t bg-white">
         <div className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-5 py-16 sm:px-8 md:flex-row md:items-center md:justify-between">
           <div>
@@ -79,7 +73,7 @@ export default function Homepage() {
               Applications close{" "}
               {new Date(ADMISSIONS.applicationCloses).toLocaleDateString(
                 "en-KE",
-                { day: "numeric", month: "long", year: "numeric" }
+                { day: "numeric", month: "long", year: "numeric" },
               )}
               . Review requirements and key dates before you apply.
             </p>

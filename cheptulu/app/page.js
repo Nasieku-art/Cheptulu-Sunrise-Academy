@@ -1,8 +1,6 @@
 "use client";
-import Link from "next/link";
 
-import Homepage from "./home/page";
-
+import Homepage from "../components/Home.js/page";
 
 export default function Home() {
   return (

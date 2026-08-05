@@ -30,7 +30,7 @@ export default function AdminLogin() {
         Staff Access
       </span>
       <h1
-        className="mt-2 text-3xl font-semibold"
+        className="mt-2 text-3xl font-semibold text-"
         style={{ fontFamily: "'Fraunces', 'Georgia', serif" }}
       >
         Admin Login
