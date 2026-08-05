@@ -62,7 +62,7 @@ export default function Footer() {
               width={40}
               height={20}
               />
-              
+
             </li>
             <li>
                 <Image
@@ -75,9 +75,17 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-[#FAF6EC]/10 px-5 py-5 text-center text-xs text-[#FAF6EC]/50 sm:px-8">
-        © {new Date().getFullYear()} Cheptulu Secondary School. All rights
+        © {new Date().getFullYear()} Cheptulu Sunrise Academy . All rights
         reserved.
       </div>
     </footer>
   );
 }
+
+
+
+
+
+
+
+
